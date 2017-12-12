@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<style type="text/css">
+			.main{
+				width: 100%;
+				height: 423.667px;
+				border-top: 3px solid #E60012;
+			}
+			.main .all{
+				width: 1000px;
+				height: 421px;
+				margin: 0 auto;
+			}
+			.main .all .sidebar_left{
+				width: 253px;
+				height: 140px;
+				float: left;
+			}
+			.main .all .sidebar_left>h3{
+				width: 253px;
+				height: 42px;
+				background: url(img/bgs.png);
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				text-align: center;
+				line-height: 28px;
+				font-size: 16px;
+				color: white;
+				letter-spacing: 1px
+			}
+			.main .all .sidebar_left>h3>img{
+				margin-right: 3px;
+				width: 20px; 
+				height: 18px;
+				position: relative;
+				transform: translateY(-3px);
+			}
+			.main .all .sidebar_left>.content{
+				margin: 0 23px;
+				border-left: 2px solid #E60012;
+				border-right: 2px solid #E60012;
+				z-index: 1;
+			}
+			.main .all .sidebar_left>.content>ul{
+				margin: -4px auto;
+				position: relative;
+			}
+			.main .all .sidebar_left>.content>ul>li{
+				
+				width: 193px;
+				height: 26px;
+				text-align: center;
+				margin: 0 auto;
+				line-height: 26px;
+				background: url(img/bgs.png);
+				background-position-y: -64px;
+				color: #6a3301;
+				font-size: 15px;
+				
+			}
+			.main .all .sidebar_left>.content>ul>li:nth-child(1){
+				color: #fff;
+				background-position-y: -95px;
+			}
+			.main .all .sidebar_left>.content>ul>li:nth-child(1),
+			.main .all .sidebar_left>.content>ul>li:nth-child(2){
+				margin-bottom: 5px;
+			}
+			
+			.main .all .sidebar_left>.content>ul>li:hover{
+				color: #fff;
+				background-position-y: -95px;
+			}
+			.main .all .sidebar_left>.bottom{
+				width: 253px;
+				height: 18px;
+				background: url(img/bgs.png);
+				background-position-y: -42px;
+				background-repeat: no-repeat;
+				display: block;
+			}
+			
+			
+			 .main .all .content_right{
+			 	
+				width: 747px;
+				margin-top: 21px;
+				float: left;
+				min-height: 400px;
+			}
+			
+			
+		</style>
+		<!--<link rel="stylesheet" href="css/helpCenter"/>-->
+	</head>
+	<body>
+		
+		<div class="main">
+			<div class="all">
+				<div class="sidebar_left">
+					<h3><img src="img/help.png" /><strong>帮助中心</strong></h3>
+					<div class="content">
+						<ul>
+							<li><span>新手入门</span></li>
+							<li><span>常见问题</span></li>
+							<li><span>真功夫会员</span></li>
+						</ul>
+					</div>
+					<div class="bottom"></div>
+				</div>
+				<div class="content_right">
+					<img src="img/定餐步骤.jpg" width="749px" height="256px" />
+					<div class="FAQ">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		var sidebar_left_menu = document.querySelectorAll(".main .all .sidebar_left>.content>ul>li");
+		sidebar_left_menu[0].addEventListener("click",function(){
+			sidebar_left_menu[0].style.color = "#fff";
+			sidebar_left_menu[0].style.backgroundPositionY = "-95px";
+			sidebar_left_menu[1].style.color = "#6a3301";
+			sidebar_left_menu[1].style.backgroundPositionY = "-64px";
+			sidebar_left_menu[2].style.color="#6a3301";
+			sidebar_left_menu[2].style.backgroundPositionY = "-64px";
+		});
+		sidebar_left_menu[1].addEventListener("click",function(){
+			sidebar_left_menu[0].style.color = "#6a3301";
+			sidebar_left_menu[0].style.backgroundPositionY = "-64px";
+			sidebar_left_menu[1].style.color = "#fff";
+			sidebar_left_menu[1].style.backgroundPositionY = "-95px";
+			sidebar_left_menu[2].style.color="#6a3301";
+			sidebar_left_menu[2].style.backgroundPositionY = "-64px";
+		});
+		sidebar_left_menu[2].addEventListener("click",function(){
+			sidebar_left_menu[0].style.color = "#6a3301";
+			sidebar_left_menu[0].style.backgroundPositionY = "-64px";
+			sidebar_left_menu[1].style.color = "#6a3301";
+			sidebar_left_menu[1].style.backgroundPositionY = "-64px";
+			sidebar_left_menu[2].style.color="#fff";
+			sidebar_left_menu[2].style.backgroundPositionY = "-95px";
+		});
+		
+	</script>
+</html>
