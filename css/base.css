@@ -11,6 +11,9 @@ body {
 
 }
 
+li{
+	list-style: none;
+}
 fieldset, img, input, button {
     border: none;
     padding: 0;
@@ -76,6 +79,7 @@ a {
 }
 
 a:hover {
+	text-decoration: none;
     color: #C81623;
 }
 
