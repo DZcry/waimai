@@ -57,10 +57,10 @@
 							<div class="main-menu">
 								<ul>
 									<li class="menu-first">
-										<a class="amenu-first" href="#">帐号信息</a>
+										<a class="amenu-first" name="account" href="#">帐号信息</a>
 									</li>
 									<li>
-										<a href="#">绑定实体卡</a>
+										<a href="#" name="bandcard">绑定实体卡</a>
 									</li>
 									<li>
 										<a href="#">真享卡</a>
@@ -100,6 +100,7 @@
 								帐号信息
 							</h1>
 						</div>
+                        <!--会员信息-->
 						<div class="user-info">
 							<div class="user-logo">
 								<img src="img/defaultheader.jpg"/>
@@ -185,6 +186,41 @@
 								</div>
 							</div>
 						</div>
+                        <!--绑定实体卡-->
+                        <div class="bind-card-size">
+                            <form class="bind-card">
+                                <div class="form-item ">
+                                    <label for="bind_card_number" class="item-label">实体卡号：</label>
+                                    <div class="form-input-size">
+                                        <b class="l"></b>
+                                        <input type="text" id="bind_card_number" name="bind_card_number" class="from-item-input" placeholder="请输入八位或十位卡号">
+                                        <b class="r"></b>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <label for="bind_card_active" class="item-label">激活码：</label>
+                                    <div class="form-input-size">
+                                        <b class="l"></b>
+                                        <input type="text" id="bind_card_active" name="bind_card_active" class="from-item-input" placeholder="请输入四位激活码">
+                                        <b class="r"></b>
+                                    </div>
+                                </div>
+                                <div class="card-btn">
+                                    <button type="submit" class="btn btn-warning" id="band-cancel-btn">
+                                        <b class="l"></b>
+                                        <span><i class="icon">取消</i></span>
+                                        <b class="r"></b>
+                                    </button>
+                                    <button type="submit" class="btn btn-danger" id="band-band-btn">
+                                        <b class="l"></b>
+                                        <span><i class="icon">绑定</i></span>
+                                        <b class="r"></b>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!---->
+
 					</div>
 					
 					
@@ -221,6 +257,9 @@
 	</body>
 	
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/VIPcenter.js"></script>
+    <script type="text/javascript">
+        console.log($("#main-main .main-menu>ul>li>a").eq(0).attr("name"));
+    </script>
 	
 </html>
