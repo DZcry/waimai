@@ -2,6 +2,10 @@
 @redCor: #e60012;
 @copyightColor: #6a3301;
 
+
+.VIPmessage{
+    display: none;
+}
 .wid-hei(@width, @height) {
     width: @width;
     height: @height;
@@ -23,7 +27,7 @@
         background-position-x: 65%;
         #header-main {
             .wid-hei(1000px, 74px);
-            margin: 0px auto;
+            margin: 0 auto;
             position: relative;
             .header-logo {
                 .wid-hei(156px, 74px);
@@ -45,8 +49,8 @@
             }
             .header-menu {
                 position: absolute;
-                bottom: 0px;
-                right: 0px;
+                bottom: 0;
+                right: 0;
                 .wid-hei(549px, 29px);
                 &>ul {
                     .wid-hei(549px, 29px);
@@ -59,7 +63,7 @@
                         float: left;
                         line-height: 26px;
                         &>a {
-                            padding: 0px 5px;
+                            padding: 0 5px;
                             .wid-hei(91px, 26px);
                             text-align: center;
                             display: block;
@@ -71,8 +75,8 @@
             }
             .header-singin-up {
                 position: absolute;
-                top: 0px;
-                right: 0px;
+                top: 0;
+                right: 0;
             }
         }
     }
@@ -143,9 +147,9 @@
                                     line-height: 26px; 
                                     font-size: 16px;
                                     &:hover {
-                                        background-image: url(../img/bgs.png);
-                                        background-position-y: -94px;
-                                        color: white;
+                                        background-image: url(../img/bgs.png) !important;;
+                                        background-position-y: -94px !important;;
+                                        color: white !important;
                                         
                                     }
                                 }
@@ -199,6 +203,7 @@
                 }
                 .user-info {
                     .wid-hei(747px, 220px);
+                    .VIPmessage;
                     //                  width: 747px;
                     .user-logo {
                         float: left;
@@ -248,7 +253,6 @@
                                     top: 0px;
                                     display: block;
                                     .wid-hei(9px, 23px);
-                                    background-color: ;
                                     background-image: url(../img/buttons.jpg);
                                     background-repeat: no-repeat;
                                 }
@@ -261,7 +265,6 @@
                                     text-align: center;
                                 }
                                 .left {
-                                    width: ;
                                     left: 0px;
                                     background-position: 0 -232px;
                                 }
@@ -281,7 +284,7 @@
                 
                 .panel-card{
                     height: 260px;
-                    
+                    .VIPmessage;
                     &>div{
                         position: relative;
                     }
@@ -378,6 +381,66 @@
                             height: 10px;
                             position: relative;
                             top: -1px;
+                        }
+                    }
+                }
+                //绑定实体卡样式
+                .bind-card-size{
+
+                    .bind-card{
+
+                        .form-item{
+                            clear: both;
+                            margin: 10px 10px;
+                            .item-label{
+                                float: left;
+                                text-align: right;
+                                .width(100px);
+                                line-height: 31px;
+                            }
+                            .form-input-size{
+                                float: left;
+                                position: relative;
+                                background-color: #0D2F52;
+                                &>b{
+
+                                    //display: block;
+                                    .wid-hei(9px,31px);
+                                    background-repeat: no-repeat;
+                                    position: absolute;
+                                    background-image: url("../img/buttons.jpg");
+                                }
+                                .l{
+                                    top: 0;
+                                    left: 0;
+                                    background-position: 0 -335px;
+                                }
+                                .r{
+                                    top: 0;
+                                    background-position: 0 -366px;
+                                    right: 0;
+                                }
+                                .from-item-input{
+                                    padding: 0 10px;
+                                    .wid-hei(260px,31px);
+                                    font-size: 12px;
+                                    border-top: 1px solid #6a3301;
+                                    border-bottom: 1px solid #6a3301;
+                                    display: block;
+                                    overflow: visible;
+
+                                }
+                            }
+                        }
+                        .card-btn{
+                            margin-top: 10px;
+                            clear: both;
+                            margin: 0 auto;
+                            .width(70%);
+                            &>button{
+                                margin-left: 10px;
+                                .wid-hei(88px,31px);
+                            }
                         }
                     }
                 }

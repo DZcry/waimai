@@ -1,3 +1,6 @@
+.VIPmessage {
+  display: none;
+}
 .colorRed {
   color: red;
 }
@@ -12,7 +15,7 @@
 #page #header #header-main {
   width: 1000px;
   height: 74px;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
 }
 #page #header #header-main .header-logo {
@@ -38,8 +41,8 @@
 }
 #page #header #header-main .header-menu {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 549px;
   height: 29px;
 }
@@ -58,7 +61,7 @@
   line-height: 26px;
 }
 #page #header #header-main .header-menu > ul > li > a {
-  padding: 0px 5px;
+  padding: 0 5px;
   width: 91px;
   height: 26px;
   text-align: center;
@@ -68,8 +71,8 @@
 }
 #page #header #header-main .header-singin-up {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
 #page #main {
   width: 100%;
@@ -145,9 +148,9 @@
   font-size: 16px;
 }
 #page #main #main-main .main-left .main-left-inner .main-menu > ul > li > a:hover {
-  background-image: url(../img/bgs.png);
-  background-position-y: -94px;
-  color: white;
+  background-image: url(../img/bgs.png) !important;
+  background-position-y: -94px !important;
+  color: white !important;
 }
 #page #main #main-main .main-left .main-left-inner .main-left-bottom {
   width: 253px;
@@ -201,6 +204,7 @@
 #page #main #main-main .main-content .user-info {
   width: 747px;
   height: 220px;
+  display: none;
 }
 #page #main #main-main .main-content .user-info .user-logo {
   float: left;
@@ -256,7 +260,6 @@
   display: block;
   width: 9px;
   height: 23px;
-  background-color: ;
   background-image: url(../img/buttons.jpg);
   background-repeat: no-repeat;
 }
@@ -268,7 +271,6 @@
   text-align: center;
 }
 #page #main #main-main .main-content .user-info .user-detal .user-info-item > a .left {
-  width: ;
   left: 0px;
   background-position: 0 -232px;
 }
@@ -283,6 +285,7 @@
 }
 #page #main #main-main .main-content .panel-card {
   height: 260px;
+  display: none;
 }
 #page #main #main-main .main-content .panel-card > div {
   position: relative;
@@ -372,6 +375,59 @@
   height: 10px;
   position: relative;
   top: -1px;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item {
+  clear: both;
+  margin: 10px 10px;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .item-label {
+  float: left;
+  text-align: right;
+  width: 100px;
+  line-height: 31px;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .form-input-size {
+  float: left;
+  position: relative;
+  background-color: #0D2F52;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .form-input-size > b {
+  width: 9px;
+  height: 31px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url("../img/buttons.jpg");
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .form-input-size .l {
+  top: 0;
+  left: 0;
+  background-position: 0 -335px;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .form-input-size .r {
+  top: 0;
+  background-position: 0 -366px;
+  right: 0;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .form-item .form-input-size .from-item-input {
+  padding: 0 10px;
+  width: 260px;
+  height: 31px;
+  font-size: 12px;
+  border-top: 1px solid #6a3301;
+  border-bottom: 1px solid #6a3301;
+  display: block;
+  overflow: visible;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .card-btn {
+  margin-top: 10px;
+  clear: both;
+  margin: 0 auto;
+  width: 70%;
+}
+#page #main #main-main .main-content .bind-card-size .bind-card .card-btn > button {
+  margin-left: 10px;
+  width: 88px;
+  height: 31px;
 }
 #page #footer {
   width: 100%;
